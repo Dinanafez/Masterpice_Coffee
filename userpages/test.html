@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<script>
+    var array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    function arraydesc(array){
+    for (let i = array.length - 1; i >= 0; i--) {
+        console.log(array[i]);
+    } 
+
+    return array;
+
+}
+arraydesc(array);
+
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function getMinMaxIndex(array) {
+   
+    let minIndex = 0;
+    let maxIndex = 0;
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] < minValue) {
+            minValue = array[i];
+            minIndex = i;
+        }
+        if (array[i] > maxValue) {
+            maxValue = array[i];
+            maxIndex = i;
+        }
+    }
+
+    return { minIndex, maxIndex, minValue, maxValue };
+}
